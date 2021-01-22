@@ -7,6 +7,7 @@ var engine,world;
 var holder,ball,ground
 var stand1,stand2
 var slingshot,backgroundImg;
+var Score=0
 function preload() {
   //  backgroundImg = loadImage("bg.png");
   getTime();
@@ -67,6 +68,9 @@ function draw(){
     if(backgroundImg){
         background(backgroundImg);
     }
+    fill("white")
+    textSize(50)
+    text("Score:"+Score,width-300,50)
     Engine.update(engine);
 
     ball.display();
@@ -107,6 +111,36 @@ function draw(){
     box19.display();
     box24.display();
     box29.display();
+    
+    box1.score();
+    box2.score();
+    box3.score();
+    box4.score();
+    box5.score();
+    box6.score();
+    box7.score();
+    box8.score();
+    box9.score();
+    box10.score();
+    box11.score();
+    box12.score();
+    box13.score();
+    box14.score();
+    box15.score();
+    box16.score();
+    box17.score();
+    box18.score();
+    box19.score();
+    box20.score();
+    box21.score();
+    box22.score();
+    box23.score();
+    box24.score();
+    box25.score();
+    box26.score();
+    box27.score();
+    box28.score();
+    box29.score();
 }
 
 function mouseDragged(){
